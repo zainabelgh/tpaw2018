@@ -1,12 +1,13 @@
 table{
-	
-	border="1" width="100%"
+	border-collapse: collapse;
+	border:1px solid GRAY;
+	width:100%;
 }
 
 body{
-	background:#E9EEF0
+	background: #E9EEF0;
 }
 
 h1{
-	color:#0088CD
+	color:#0088CD;
 }
