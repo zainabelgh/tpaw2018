@@ -1,5 +1,5 @@
 function validation() {
-    if (document.getElementById("nom").value="" || document.getElementById("prenom").value=="" || document.getElementById("dateNaissance").value=="" || document.getElementById("adresse").value=="" || document.getElementById("mail").value=="")
+    if (document.getElementById("nom").value=="" || document.getElementById("prenom").value=="" || document.getElementById("dateNaissance").value=="" || document.getElementById("adresse").value=="" || document.getElementById("mail").value=="")
     {   
         document.getElementById("resultat").setAttribute("hidden","hidden");
         document.getElementById("error").removeAttribute("hidden");
