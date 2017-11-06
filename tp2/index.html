@@ -1,33 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+        <head>
+                <meta charset="utf-8">
+                <title>Formulaire de saisie</title>
+                   <link rel="stylesheet" type="text/css" href="formulaire.css">
+                   <script type="text/javascript" src="formulaire.js"></script>
+             </head>
+<h1>Saisie d'une fiche "Personne"</h1>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
-</html>
+<form method="POST" action="">
+        <br>
+        <div>
+                <label>&nbsp;&nbsp;  Nom:</label><center>
+                <input name="Nom " type="text" placeholder="Entrez votre nom" maxlength="20"   id="nom" />
+                        </center>
+            </div>
+ <br>
+ 
+            <div>
+                <label>&nbsp;  Prénom: </label><center>
+                <input name="Prenom" type="text" placeholder="Entrez votre prenom" maxlength="20" id="prenom" />
+                      </center>
+            </div>
+            <div>
+                    <br>    
+             <div>
+                <label>&nbsp;  Date de Naissaince: </label><center>
+                <input name="Date Naissaince"  type="Date"  id="dateNaissance"  />
+          </center>                    
+             </div>
+            
+             <br>
+            <div>
+                <label>&nbsp; Adresse :</label><center>
+                <input name="Adresse" type="text" placeholder="Entrez votre Adresse" maxlength="50" id="adresse" />
+                </center>
+            </div>
+            <br>
+                <label>&nbsp;  Mail:</label><center>
+                <input name="Email" type="text" placeholder="Entrez votre Mail" maxlength="30"id="mail" />
+             </center>           
+            </div>
+            <br/>
+            <div>
+                <label>&nbsp;</label><center>
+                <input type="button" value="Valider" class="submit"  onclick="validation()" />
+                </center>
+            </div>
+ <br>
+ <br>
+</p>
+        </form>
+        <br>
+        <br>
+                
+                                 <div id="error" hidden> 
+                                  <label><center>Le nom doit contenir au moins 5 caracteres</center></label>
+                                 </div>
+                                <div id="resultat" hidden> 
+                                     <label><center>bienvenue <output name="nom"></output></center></lasbel>
+                                </div> 
+ </body>
+ </html>
