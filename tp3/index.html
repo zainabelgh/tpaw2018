@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+
         <head>
                 <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <title>TP3</title>
                 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
                 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
                 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-                <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-                <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
                 <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
                 <script src="js/jquery-3.2.1.slim.min.js"></script>
                 <!-- CSS boostrap -->
@@ -22,12 +18,8 @@
                 <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
                 <script src="js/bootstrap.min.js"></script>
                 <script src="js/form-jquery-validation.js"></script>
-                <script>
-                  $( "#date" ).datepicker();
-                </script>
-                
         </head>
-
+        <body>
 
         <h1>&nbsp;&nbsp; TP AW Formulaire v2</h1>
         <p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Avec Bootstrap et Jquery</p>
@@ -43,9 +35,9 @@
             </div>
             <div class="form-group">
               <label class="col-form-label" for="daten">Date de naissance</label>
-              <input  id="date" placeholder="JJ/MM/AAAA">
+              <input type="date" class="form-control" id="date" placeholder="JJ/MM/AAAA">              
+             
             </div>
-            
             <div class="form-group">
               <label class="col-form-label" for="address">Adresse</label>
               <input type="text" class="form-control" id="address">
